@@ -3,7 +3,7 @@ const bot = new Discord.Client();
 const TOKEN = 'NDc4NDUyODE2ODIyNzk2Mjkx.DlLdfw.qcuaf03cYEVVSilo_CTw0n7wKRg'
 
 
-
+bot.login('NDc4NDUyODE2ODIyNzk2Mjkx.DlLdfw.qcuaf03cYEVVSilo_CTw0n7wKRg')
 
 
 
@@ -25,6 +25,14 @@ bot.on('message', msg => {
     }
   });
 
+  bot.on('message', msg => {
+    if (msg.content.toLowerCase().includes('unhook')) {
+      msg.reply('JAR OF LIPS');
+      msg.reply('JAR OF LIPS');
+      msg.reply('JAR OF LIPS');
+     
+    }
+  });
 
 bot.on('ready',function(){
     console.log('Ready');
@@ -32,7 +40,7 @@ bot.on('ready',function(){
 
 bot.on('message', msg => {
     if (msg.content.toLowerCase() === 'ping') {
-      msg.reply('Pong!');
+      message = ('Pong!');
     }
   });
 
@@ -69,7 +77,7 @@ bot.on('message', message => {
     }
   });
 
-bot.login('NDc4NDUyODE2ODIyNzk2Mjkx.DlLdfw.qcuaf03cYEVVSilo_CTw0n7wKRg')
+
 
 
 
